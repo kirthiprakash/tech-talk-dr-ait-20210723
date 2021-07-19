@@ -184,8 +184,24 @@ img {
 
 /* Custom override styles for tech-talk */
 
-#mal-3 img {
+#mal-2 img {
   width: 80%;
   margin: auto;
-  left-margin: 80px;
+  margin-left: 80px;
+  float: unset;
+}
+
+#mal-1 .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mal-1 code {
+  padding-right: 60px;
+  font-size: 17px;
+}
+
+.figure-name {
+  font-size: 20px;
+  text-align: center;
 }

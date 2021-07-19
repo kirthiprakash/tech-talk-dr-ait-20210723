@@ -7,6 +7,7 @@
     <meta name="description" content="Modren Cyber Security Landscape" />
     <meta name="author" content="Kirthi Prakash Renuka" />
     <link rel="stylesheet" href="css/highlight/github.css">
+    <link rel="stylesheet" href="css//mermaid/mermaid.forest.css">
 
     <!-- Common styles for example presentations -->  
     <link href="css/impress-common.css" rel="stylesheet" />  
@@ -39,21 +40,52 @@
 * Tradiional v/s modren approach
 * Containerizing workloads (using Docker)
   </div>
-  <div id="mal-1" class="step slide markdown" data-rel-x="-3600" data-rel-y="-1100">
+  <div id="mal-1" class="step slide" data-rel-x="-3600" data-rel-y="-1100">
+    <h1>Modren Application Landscape</h1>
+    <div class="flex">
+      <div>
+        <pre><code>
+        ├── Inventory
+        ├── Account & Identity
+        │   ├── Accounts
+        │   └── Identity
+        └── Orders
+        └── Shipping
+        </code></pre>
+      </div>
+      <div>
+        <div class="mermaid">
+          flowchart TD
+          AC(Accounts & Identity) --- IN(Inventory)
+          AC --- OR(Orders)
+          SH(Shipping) --- OR
+          IN(Inventory) --- OR
+          DB[(Database)] --- AC
+          DB --- OR
+          DB --- IN
+        </div>
+      </div>
+    </div>
+    <pre class="figure-name"> Fig 1: Monolith vs Micro-services architecture </pre>
+    <div>
+      <h2 style="text-align: left"> Micro-services </h2>
+      <ul>
+        <li>Micro-services are applications that reprsent a set of narrowly scoped functional components</li>
+        <li>Improved scalability</li>
+        <li>Better fault isolation and resiliency</li>
+        <li>Technology agnostic</li>
+      </ul>
+    </div>
+  </div>
+  <div id="mal-2" class="step slide markdown" data-rel-x="1400" data-rel-y="0" data-rotate-y="90">
 #Modren Application Landscape
 
-## Monolith vs Micro-services architecture
-  </div>
-  <div id="mal-2" class="step slide markdown" data-rel-x="1400" data-rel-y="0">
-#Modren Application Landscape
+![More than 2200 microservices at Uber](resources/uber-micro-services-jaeger.png)       
 
-A picture
-  </div>
-  <div id="mal-3" class="step slide markdown" data-rel-x="1400" data-rel-y="0" data-rotate-y="90">
-#Modren Application Landscape
 
-![More than 2200 microservices at Uber](resources/uber-micro-services-jaeger.png)
+`Fig 2: More then 2200 micro-services at Uber (2018) https://eng.uber.com/microservice-architecture/`
   </div>
+  <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
 </div>
 
 <div id="impress-toolbar"></div>
