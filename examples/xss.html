@@ -1,0 +1,18 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div style="width: 80%; margin: auto; margin-top: 25%; text-align: center;">
+      <textarea id="name"></textarea>
+      <button id="greet"> submit </button>
+      <div id="display" style="margin-top: 50px"> 
+      </div>
+    </div>
+    <script>
+      document.getElementById('greet').addEventListener('click', function() {
+        var name = document.getElementById('name').value;
+        document.getElementById('display').innerHTML = 'Hello ' + name
+      });
+    </script>
+  </body>
+</html>
