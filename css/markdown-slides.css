@@ -83,7 +83,7 @@ body {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
     transition:         opacity 1s;
 }
 .impress-enabled .step.active { opacity: 1 }
@@ -204,4 +204,9 @@ p {
   width: 100%;
   float: unset;
   margin: 0;
+}
+.impress-enabled.impress-on-overview .step {
+    margin: 0;
+    opacity: 0.3;
+    transition:         opacity 1s;
 }
