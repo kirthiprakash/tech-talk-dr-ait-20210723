@@ -94,15 +94,70 @@ A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain 
 
 A flaw or weakness in a system's design, implementation or operation that could be exploited to violate the system's security policy.
 
-[An example Cross-site scripting attack](examples/xss.html)
-
-## Attack surface
-An attack surface (a.k.a. digital attack surface or external attack surface) is a set of points, system elements or endpoints whereby an attack could potentially breach, effect or control systems, and extract or manipulate information for nefarious purposes.
   </div>
-  <div id="ca-2" class="step slide markdown" data-rel-x="1400" data-rel-y="0">
-#How cyber attack works?
+  <div id="ca-2" class="step slide" data-rel-x="1400" data-rel-y="0">
+    <div class="markdown">
+# Attack surface and Attack Vectors
+An **attack surface** is a set of points, system elements or endpoints whereby an attack could potentially breach, effect or control systems, and extract or manipulate information for nefarious purposes.
 
-## Exploiting a web application
+* Infrastucture - servers, routers, storage, Wifi Access points, Firewall, VPN gateway
+* Application - API endpoints
+* Endpoints - work stations, smartphones, printers, IoT devices
+* Physical access control
+  </div>
+  <div class="substep markdown">
+An **attack vector** is a path or means by which an attacker or hacker can gain access to a computer or network server in order to deliver a payload or malicious outcome
+
+* Weak passwords, passwords stored in plain text
+* Unpatched vulnerabilites
+* Phishing and social engineering
+* Misconfiguration
+* Missing/poor encryption
+* Malicious insiders
+  </div>
+  </div>
+  <div id="ca-3" class="step slide markdown" data-rel-x="1400" data-rel-y="0">
+# 2017 Equifax breach - Apache Struts vulnerability
+![equifax breach](resources/attack-simulation-equifax-breach.png)
+`Fig 3: Example of multiple attack vectors used in Equifax Breach https://www.balbix.com/insights/attack-vector-vs-attack-surface/`
+
+Further reading: https://www.wired.com/story/equifax-hack-china/
+  </div>
+  <div id="ca-4" class="step slide" data-rel-x="1400" data-rel-y="0">
+    <h1> Exploiting a vulnerability </h1>
+    <h2> My greeting application </h2>
+    <pre><code>
+      &lt;html&gt;
+        &lt;body&gt;
+          &lt;div style=&quot;width: 80%; margin: auto; margin-top: 25%; text-align: center;&quot;&gt;
+            &lt;textarea id=&quot;name&quot;&gt;&lt;/textarea&gt;
+            &lt;button id=&quot;greet&quot;&gt; submit &lt;/button&gt;
+            &lt;div id=&quot;display&quot; style=&quot;margin-top: 50px&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;script&gt;
+            document.getElementById('greet').addEventListener('click', function() {
+              var name = document.getElementById('name').value;
+              document.getElementById('display').innerHTML = 'Hello ' + name
+            });
+          &lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code></pre>
+    <a href="examples/xss.html">My greeting application</a>
+    <div class="substep markdown">
+* Vulnerabilities are not always from one's own code
+* An application consists of its own source code, 3rd party libraries/dependencies and other operating system level dependencies
+* Applications tend to use 3rd party libraries to accelerate development process
+* 3rd party libraries have their dependencies too
+* Attack surface expands with dependencies
+
+    </div>
+  </div>
+  <div id="ca-5" class="step slide markdown" data-rel-x="1400" data-rel-y="0">
+#Exploiting a vulnerability
+
+[Cross-site scripting attack](examples/xss.html)
 
 * An application consists of its own source code, 3rd party libraries/dependencies and other operating system level dependencies
 * Applications tend to use 3rd party libraries to accelerate development process
