@@ -27,7 +27,7 @@
 </div>
 
 <div id="impress" data-transition-duration="1000">
-  <div id="overview" class="step summary" data-x="3400" data-y="0" data-scale="15" style="pointer-events: none;"></div>
+  <div id="overview" class="step summary" data-x="7000" data-y="0" data-scale="3" style="pointer-events: none;"></div>
   <div id="markdown" class="step slide markdown" data-x="3400" data-y="0">
 # Modren Cyber Security Landscape
 ## Preventive techniques and best practices
@@ -78,7 +78,7 @@
       </ul>
     </div>
   </div>
-  <div id="mal-2" class="step hl slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="45">
+  <div id="mal-2" class="step hl slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
 #Modren Application Landscape
 
 ![More than 2000 microservices at Uber](resources/uber-micro-services-jaeger.png)       
@@ -86,8 +86,7 @@
 
 `Fig 2: More than 2000 micro-services at Uber (2018) https://eng.uber.com/microservice-architecture/`
   </div>
-  <div id="overview" class="step summary" data-x="3400" data-y="0" data-scale="5" style="pointer-events: none;"></div>
-  <div id="ca-1" class="step slide markdown" style="text-align: left" data-rel-x="2800" data-rel-y="0" data-rel-z="2000" data-rotate-y="45">
+  <div id="ca-1" class="ca step slide markdown" style="text-align: left" data-rel-x="2800" data-rel-y="0" data-rel-z="2000">
 #What is a cyber attack?
 
 A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain information through unauthorized access to or make unauthorized use of an asset by hacking into a susceptible system.
@@ -97,35 +96,7 @@ A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain 
 A flaw or weakness in a system's design, implementation or operation that could be exploited to violate the system's security policy.
 
   </div>
-  <div id="ca-2" class="step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="-45">
-    <div class="markdown">
-# Attack surface and Attack Vectors
-An **attack surface** is a set of points, system elements or endpoints whereby an attack could potentially breach, effect or control systems, and extract or manipulate information for nefarious purposes.
-
-* Infrastucture - servers, routers, storage, Wifi Access points, Firewall, VPN gateway
-* Application - API endpoints
-* Endpoints - work stations, smartphones, printers, IoT devices
-* Physical access control
-  </div>
-  <div class="substep markdown">
-An **attack vector** is a path or means by which an attacker or hacker can gain access to a computer or network server in order to deliver a payload or malicious outcome
-
-* Weak passwords, passwords stored in plain text
-* Unpatched vulnerabilites
-* Phishing and social engineering
-* Misconfiguration
-* Missing/poor encryption
-* Malicious insiders
-  </div>
-  </div>
-  <div id="ca-3" class="step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="45">
-# 2017 Equifax breach - Apache Struts vulnerability
-![equifax breach](resources/attack-simulation-equifax-breach.png)
-`Fig 3: Example of multiple attack vectors used in Equifax Breach https://www.balbix.com/insights/attack-vector-vs-attack-surface/`
-
-Further reading: https://www.wired.com/story/equifax-hack-china/
-  </div>
-  <div id="ca-4" class="step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="-45">
+  <div id="ca-2" class="ca step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <h1> Exploiting a vulnerability </h1>
     <h2> My greeting application </h2>
     <pre><code>
@@ -155,20 +126,46 @@ Further reading: https://www.wired.com/story/equifax-hack-china/
 * Attack surface expands with dependencies
 
     </div>
+  </div><div id="ca-3" class="ca step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+    <div class="markdown">
+# Attack surface and Attack Vectors
+An **attack surface** is a set of points, system elements or endpoints whereby an attack could potentially breach, effect or control systems, and extract or manipulate information for nefarious purposes.
+
+* Infrastucture - servers, routers, storage, Wifi Access points, Firewall, VPN gateway
+* Application - API endpoints
+* Endpoints - work stations, smartphones, printers, IoT devices
+* Physical access control
   </div>
-  <div id="ca-5" class="step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="45">
-#Exploiting a vulnerability
+  <div class="substep markdown">
+An **attack vector** is a path or means by which an attacker or hacker can gain access to a computer or network server in order to deliver a payload or malicious outcome
 
-[Cross-site scripting attack](examples/xss.html)
-
-* An application consists of its own source code, 3rd party libraries/dependencies and other operating system level dependencies
-* Applications tend to use 3rd party libraries to accelerate development process
-* 3rd party libraries have their dependencies too
-
-> A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain information through unauthorized access to or make unauthorized use of an asset.
-
+* Weak passwords, passwords stored in plain text
+* Unpatched vulnerabilites
+* Phishing and social engineering
+* Misconfiguration
+* Missing/poor encryption
+* Malicious insiders
   </div>
-  <div id="overview" class="step summary" data-x="3400" data-y="0" data-scale="5" style="pointer-events: none;"></div>
+  </div>
+  <div id="ca-4" class="ca step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+# 2017 Equifax breach - Apache Struts vulnerability
+![equifax breach](resources/attack-simulation-equifax-breach.png)
+`Fig 3: Example of multiple attack vectors used in Equifax Breach https://www.balbix.com/insights/attack-vector-vs-attack-surface/`
+
+Further reading: https://www.wired.com/story/equifax-hack-china/
+  </div>
+  
+  <div id="ca-5" class="ca step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+#Common cyber attacks
+
+* Injection attacks (SQl, NoSQL, LDAP, Operating system)
+* Cross site scripting
+* Dos and DDos - Flooding, Buffer overflows 
+* Man-in-the-middle - session hijacking, IP spoofing, replay
+* Phishing and social engineering
+* password - brute force, dictionary attack, birthday attack
+* Malware
+  </div>
 
 <div id="impress-toolbar"></div>
 <div id="impress-help"></div>
