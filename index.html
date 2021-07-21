@@ -185,10 +185,10 @@ Further reading: https://www.wired.com/story/equifax-hack-china/
 # Modren cyber security approach
 * Sidecar pattern
 * Centralised vulnerability management
-* Deep packet inspection
+* Intrusion detection - Deep packet inspection
 * File integrity monitoring
 * Compliance management
-* AI/ML based itrusion detection
+* AI/ML based correlation
     </div>
   </div>
   <div id="cs-3" class="cs full-img step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
@@ -219,7 +219,52 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 * https://ubuntu.com/security/cve
 * https://access.redhat.com/security/security-updates/#/
 * https://www.microsoft.com/en-us/msrc
+
+> Most operating systems have automatic patch upgrade mechanism without user intervention.
     </div>
+  </div>
+  <div id="cs-5" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+    <div class="markdown">
+#Intrusion detection
+
+* Signature or anamoly based deep packet inspection
+* Visibility into internal/lateral network traffic
+* Signature/rules are maintained by security products and research companies
+* Some common signature/rules are freely available but latest, comprehensive set of rules are not
+    </div>
+    <div class="substep markdown">
+## Rule sets
+* https://rules.emergingthreats.net/
+## Open source IDP systems
+* https://www.snort.org/products
+* https://suricata.io/
+    </div>
+  </div>
+  <div id="cs-6" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+    <div class="markdown">
+# File Integrity Monitoring
+* Examining files to see if and when they change, how they change, who changed them, and what can be done to restore those files if those modifications are unauthorized
+    </div>
+  </div>
+  <div id="cs-7" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+    <div class="markdown">
+# Correlation of events
+
+To successfully pull off a cyber attack, it has to go through multiple stages or exploit multiple attack vectors and across time
+    </div>
+    <div style="display: flex">
+      <div class="markdown full-img">
+![Cyber kill chain](resources/THE-CYBER-KILL-CHAIN.png)
+
+`Fig:5 Cyber kill chain `
+      </div>
+      <div class="substep markdown">
+* One can correlate data from vulnerability scanners, packet inspection and file monitoring alerts
+* These events can be across 6 months or 1 year
+* Predict and mitigate further stages of the attack
+       </div>
+    </div>
+    <pre style="margin:0;">https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html</pre>
   </div>
 <div id="impress-toolbar"></div>
 <div id="impress-help"></div>

@@ -198,6 +198,11 @@ p {
   float: unset;
   margin: 0;
 }
+.half-img img {
+  width: 50%;
+  float: unset;
+  margin: 0;
+}
 .impress-enabled.impress-on-overview .step {
     margin: 0;
     opacity: 0.3;
