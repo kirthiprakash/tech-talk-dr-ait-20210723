@@ -171,13 +171,6 @@ img {
 
 /* Custom override styles for tech-talk */
 
-#mal-2 img {
-  width: 80%;
-  margin: auto;
-  margin-left: 80px;
-  float: unset;
-}
-
 #mal-1 .flex {
   display: flex;
   justify-content: space-between;
@@ -200,7 +193,7 @@ h2 {
 p {
   margin: 0;
 }
-.ca img {
+.full-img img {
   width: 100%;
   float: unset;
   margin: 0;
