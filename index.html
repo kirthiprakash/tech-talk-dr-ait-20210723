@@ -27,12 +27,12 @@
 </div>
 <div id="impress-toolbar"></div>
 <div id="impress" data-transition-duration="1000">
-  <div id="overview" class="step summary" data-x="7000" data-y="0" data-scale="3" style="pointer-events: none;"></div>
-  <div id="title" class="step slide markdown" data-x="3400" data-y="0">
+  <div id="overview" class="step summary" data-x="0" data-y="0" data-scale="3" data-rotate-y="0" style="pointer-events: none;"></div>
+  <div id="title" class="step slide markdown" data-x="0" data-y="-1000" data-z="0">
 # Modren Cyber Security Landscape
 ### Preventive techniques and best practices
   </div>
-  <div id="index" class="step slide markdown" data-rel-x="0" data-rel-z="-1000">
+  <div id="index" class="step slide markdown" data-rel-x="-2800" data-rel-y="1000" data-rel-z="-1000">
 #Topics
 
 * Modren application landscape
@@ -41,7 +41,7 @@
 * Tradiional v/s modren approach
 * Containerizing workloads (using Docker)
   </div>
-  <div id="modren-application-landscape" class="step slide hl" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="0">
+  <div id="modren-application-landscape" class="step slide hl" data-rel-x="1000" data-rel-y="0" data-rel-z="-1000" data-rotate-y="0">
     <h1>Modren Application Landscape</h1>
     <div style="display:flex; justify-content: space-between">
       <div>
@@ -86,7 +86,7 @@
 
 `Fig 2: More than 2000 micro-services at Uber (2018) https://eng.uber.com/microservice-architecture/`
   </div>
-  <div id="cyber-attack-def" class="ca step slide markdown" style="text-align: left" data-rel-x="2800" data-rel-y="0" data-rel-z="2000">
+  <div id="cyber-attack-def" class="ca step slide markdown" style="text-align: left" data-rel-x="2000" data-rel-y="0" data-rel-z="2000">
 #What is a cyber attack?
 
 A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain information through unauthorized access to or make unauthorized use of an asset by hacking into a susceptible system.
@@ -166,7 +166,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 * password - brute force, dictionary attack, birthday attack
 * Malware
   </div>
-  <div id="cyber-security-traditional" class="cs step slide" data-rel-x="1400" data-rel-y="0" data-rel-z="5000">
+  <div id="cyber-security-traditional" class="cs step slide" data-rel-x="2000" data-rel-y="0" data-rel-z="5000">
     <div class="markdown">
 # Cyber security
 ## Traditional approach
@@ -191,7 +191,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 * AI/ML based correlation
     </div>
   </div>
-  <div id="sidecar" class="cs full-img step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="sidecar" class="cs full-img step slide" data-rel-x="500" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # Sidecar pattern
 ![side care pattren](resources/sidecar-design-pattern.png)
@@ -199,7 +199,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 >Side cars can be per  micro service or per host
     </div>
   </div>
-  <div id="vulnerability-management" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="vulnerability-management" class="cs step slide" data-rel-x="500" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 #Vulnerability Management
 Vulnerability scanning - Checking application workloads against a centralised vulnerability database
@@ -221,7 +221,7 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 > Most operating systems have automatic patch upgrade mechanism without user intervention.
     </div>
   </div>
-  <div id="DPI" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="DPI" class="cs step slide" data-rel-x="500" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 #Intrusion detection
 
@@ -240,7 +240,7 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 * https://suricata.io/
     </div>
   </div>
-  <div id="FIM" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="FIM" class="cs step slide" data-rel-x="500" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # File Integrity Monitoring
 * Examining files to see if and when they change, how they change, who changed them, and what can be done to restore those files if those modifications are unauthorized
@@ -253,7 +253,7 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 * command execution
     </div>
   </div>
-  <div id="kill-chain" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="kill-chain" class="cs step slide" data-rel-x="500" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # Correlation of events
 
@@ -282,6 +282,43 @@ To successfully pull off a cyber attack, it has to go through multiple stages or
     </div>
     <div class="markdown">
 `Cyber kill chain - Registerted trademark by Lockheed Martin`
+    </div>
+  </div>
+  <div id="containerizing" class="step slide" data-rel-x="-4500" data-rel-y="1500" data-rel-z="5000">
+    <div class="markdown">
+# Containerizing workloads
+
+Encapsulating or packaging software code and all its dependencies so that it can run uniformly and consistently on any infrastructure
+    </div>
+    <div class="substep markdown">
+>It works fine on my computer 🤷
+    </div>
+    <div class="substep markdown">
+* Linux Containers (LXC) 2008 - control groups and namespaces
+* Isolated users, processes, network, filesystem, 
+* Containers share the host's kernel - Light weight and fast compared to virtual machines
+    </div>
+    <div class="substep markdown">
+* Docker revolutionalized containers in 2013 by creating an entire ecosystem for container management
+* Docker used LXC in its initial stages but later replaced with its own library
+    </div>
+  </div>
+  <div id="docker" class="step slide">
+    <div class="markdown">
+## Traditional software distribution
+* Distribute software, along with a list of dependencies via a hosted webserver, email or pen drive
+* Download software, install dependencies and run
+
+## Software distribution using Docker
+* Build a container image from source code along with dependent software
+* Upload to a container registry - DockerHub
+* Download image and run
+    </div>
+    <div class="substep markdown">
+By using a minimal base image for container images helps reduce the attack surface by limiting exposure to vulnerabilities
+
+> A typical consumer focused operating system comes with many tools and utilities which are not necessary for running a functional software. 
+    </div>
     </div>
   </div>
 <div id="impress-toolbar"></div>
