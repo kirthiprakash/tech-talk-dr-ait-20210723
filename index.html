@@ -28,9 +28,9 @@
 <div id="impress-toolbar"></div>
 <div id="impress" data-transition-duration="1000">
   <div id="overview" class="step summary" data-x="7000" data-y="0" data-scale="3" style="pointer-events: none;"></div>
-  <div id="markdown" class="step slide markdown" data-x="3400" data-y="0">
+  <div id="title" class="step slide markdown" data-x="3400" data-y="0">
 # Modren Cyber Security Landscape
-## Preventive techniques and best practices
+### Preventive techniques and best practices
   </div>
   <div id="index" class="step slide markdown" data-rel-x="0" data-rel-z="-1000">
 #Topics
@@ -41,11 +41,11 @@
 * Tradiional v/s modren approach
 * Containerizing workloads (using Docker)
   </div>
-  <div id="mal-1" class="step slide hl" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="0">
+  <div id="modren-application-landscape" class="step slide hl" data-rel-x="0" data-rel-y="0" data-rel-z="-1000" data-rotate-y="0">
     <h1>Modren Application Landscape</h1>
-    <div class="flex">
+    <div style="display:flex; justify-content: space-between">
       <div>
-        <pre><code>
+        <pre><code style="padding-right: 60px; font-size: 17px">
         ├── Inventory
         ├── Account & Identity
         │   ├── Accounts
@@ -78,7 +78,7 @@
       </ul>
     </div>
   </div>
-  <div id="mal-2" class="step full-img hl slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="uber-microservices" class="step full-img hl slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
 #Modren Application Landscape
 
 ![More than 2000 microservices at Uber](resources/uber-micro-services-jaeger.png)       
@@ -86,7 +86,7 @@
 
 `Fig 2: More than 2000 micro-services at Uber (2018) https://eng.uber.com/microservice-architecture/`
   </div>
-  <div id="ca-1" class="ca step slide markdown" style="text-align: left" data-rel-x="2800" data-rel-y="0" data-rel-z="2000">
+  <div id="cyber-attack-def" class="ca step slide markdown" style="text-align: left" data-rel-x="2800" data-rel-y="0" data-rel-z="2000">
 #What is a cyber attack?
 
 A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain information through unauthorized access to or make unauthorized use of an asset by hacking into a susceptible system.
@@ -96,7 +96,7 @@ A cyber attack is any attempt to expose, alter, disable, destroy, steal or gain 
 A flaw or weakness in a system's design, implementation or operation that could be exploited to violate the system's security policy.
 
   </div>
-  <div id="ca-2" class="ca step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="xss-demo" class="ca step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <h1> Exploiting a vulnerability </h1>
     <h2> My greeting application </h2>
     <pre><code>
@@ -126,7 +126,7 @@ A flaw or weakness in a system's design, implementation or operation that could 
 * Attack surface expands with dependencies
 
     </div>
-  </div><div id="ca-3" class="ca step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  </div><div id="attack-surface-vector" class="ca step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # Attack surface and Attack Vectors
 An **attack surface** is a set of points, system elements or endpoints whereby an attack could potentially breach, effect or control systems, and extract or manipulate information for nefarious purposes.
@@ -147,7 +147,7 @@ An **attack vector** is a path or means by which an attacker or hacker can gain 
 * Malicious insiders
   </div>
   </div>
-  <div id="ca-4" class="ca full-img step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="equifax-breach" class="ca full-img step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
 # 2017 Equifax breach - Apache Struts vulnerability
 ![equifax breach](resources/attack-simulation-equifax-breach.png)
 `Fig 3: Example of multiple attack vectors used in Equifax Breach https://www.balbix.com/insights/attack-vector-vs-attack-surface/`
@@ -155,7 +155,7 @@ An **attack vector** is a path or means by which an attacker or hacker can gain 
 Further reading: [Explaination for Apache structs vulnerability](https://medium.com/@lucideus/exploiting-apache-struts2-cve-2017-5638-lucideus-research-83adb9490ede)
   </div>
   
-  <div id="ca-5" class="ca step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="common-cyber-attacks" class="ca step slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
 #Common cyber attacks
 
 * Injection attacks (SQl, NoSQL, LDAP, Operating system)
@@ -166,7 +166,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 * password - brute force, dictionary attack, birthday attack
 * Malware
   </div>
-  <div id="cs-1" class="cs step slide" data-rel-x="1400" data-rel-y="0" data-rel-z="5000">
+  <div id="cyber-security-traditional" class="cs step slide" data-rel-x="1400" data-rel-y="0" data-rel-z="5000">
     <div class="markdown">
 # Cyber security
 ## Traditional approach
@@ -180,7 +180,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 * Isolated environments
     </div>
   </div>
-  <div id="cs-2" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="cyber-security-modren" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # Modren cyber security approach
 * Sidecar pattern
@@ -191,7 +191,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 * AI/ML based correlation
     </div>
   </div>
-  <div id="cs-3" class="cs full-img step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="sidecar" class="cs full-img step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # Sidecar pattern
 ![side care pattren](resources/sidecar-design-pattern.png)
@@ -199,7 +199,7 @@ Further reading: [Explaination for Apache structs vulnerability](https://medium.
 >Side cars can be per  micro service or per host
     </div>
   </div>
-  <div id="cs-4" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="vulnerability-management" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 #Vulnerability Management
 Vulnerability scanning - Checking application workloads against a centralised vulnerability database
@@ -221,7 +221,7 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 > Most operating systems have automatic patch upgrade mechanism without user intervention.
     </div>
   </div>
-  <div id="cs-5" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="DPI" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 #Intrusion detection
 
@@ -240,12 +240,12 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 * https://suricata.io/
     </div>
   </div>
-  <div id="cs-6" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="FIM" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # File Integrity Monitoring
 * Examining files to see if and when they change, how they change, who changed them, and what can be done to restore those files if those modifications are unauthorized
 
-# Anamoly detection
+# AI/ML based Anamoly detection
 * CPU
 * memory
 * network
@@ -253,7 +253,7 @@ NVD - National Vulnerability Database [https://nvd.nist.gov](https://nvd.nist.go
 * command execution
     </div>
   </div>
-  <div id="cs-7" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
+  <div id="kill-chain" class="cs step slide" data-rel-x="0" data-rel-y="0" data-rel-z="-1000">
     <div class="markdown">
 # Correlation of events
 
@@ -271,15 +271,13 @@ To successfully pull off a cyber attack, it has to go through multiple stages or
       </div>
       <div class="substep markdown" style="flex: 1 1 0;">
 * Correlate data from
-  * vulnerability scanners
-  * packet inspection
-  * file monitoring alerts
+  * Vulnerability scanners
+  * Packet inspection
+  * File monitoring alerts
 * Anamoly detection
-  * CPU
-  * memory
-  * network
 * These events can be across 6 months or 1 year
 * Predict and mitigate further stages of the attack
+* Predict zero day attack
        </div>
     </div>
     <div class="markdown">

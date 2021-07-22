@@ -171,16 +171,6 @@ img {
 
 /* Custom override styles for tech-talk */
 
-#mal-1 .flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-#mal-1 code {
-  padding-right: 60px;
-  font-size: 17px;
-}
-
 .figure-name {
   font-size: 20px;
   text-align: center;
@@ -194,12 +184,7 @@ p {
   margin: 0;
 }
 .full-img img {
-  width: 100%;
-  float: unset;
-  margin: 0;
-}
-.half-img img {
-  width: 50%;
+  width: 80%;
   float: unset;
   margin: 0;
 }
